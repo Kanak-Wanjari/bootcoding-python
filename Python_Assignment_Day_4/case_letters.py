@@ -1,12 +1,13 @@
-def count_upper_lower(text):
+def count_upper_lower(string):
     upper_count = 0
     lower_count = 0
-    for char in text:
-        if char.isupper():
+    for char in string:
+        if 'A' <= char <= 'Z':
             upper_count += 1
-        elif char.islower():
+        elif 'a' <= char <= 'z':
             lower_count += 1
-    print(f"No. of Upper case characters : {upper_count}")
-    print(f"No. of Lower case Characters : {lower_count}")
-user_input = input("Enter a string: ")
-count_upper_lower(user_input)
+    return upper_count, lower_count
+string = input('Enter the String')
+upper, lower = count_upper_lower(string)
+print(f"Number of uppercase letters: {upper}")
+print(f"Number of lowercase letters: {lower}")
