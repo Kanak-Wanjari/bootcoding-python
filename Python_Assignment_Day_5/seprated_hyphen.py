@@ -1,0 +1,5 @@
+sequence = input("Enter hyphen-separated sequence of words: ")
+words_list = sequence.split('-')
+sorted_words = sorted(words_list)
+result = '-'.join(sorted_words)
+print("Sorted sequence:", result)
