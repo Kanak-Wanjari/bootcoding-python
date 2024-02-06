@@ -8,6 +8,6 @@ with open(file_path,'r') as csv_file:
 
 target_accuracy = input("Enter the target percentage (eg: 10.00%): ")
 
-target_accuracy_count = sum(1 for entry in data if 'Accuracy' in entry and entry['Accuracy']==target_accuracy)
+target_accuracy_count = sum(1 for row in data if 'Accuracy' in row and row['Accuracy']==target_accuracy)
 
 print(f"Total Count of individuals with {target_accuracy} accuracy:{target_accuracy_count}")
