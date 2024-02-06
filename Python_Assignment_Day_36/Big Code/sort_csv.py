@@ -1,8 +1,8 @@
 import csv
 import os
 
-input_file_path = 'C:\Python Bootcoding\Hospitals.csv'
-output_directory = r'C:\Python Bootcoding\bootcoding-python\Python_Assignment_Day_36\Big Code'
+input_file_path = 'C:\Python Bootcoding\Hospitals1.csv'
+output_directory = r'C:\Python Bootcoding\bootcoding-python\Python_Assignment_Day_36\Big Code\CSV_files'
 
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
@@ -11,7 +11,7 @@ with open(input_file_path, 'r') as file:
     csv_reader = csv.DictReader(file)
     data = list(csv_reader)
 
-unique_zip_values = set(entry['ZIP'] for entry in data if 'ZIP' in entry)
+unique_zip_values = set(row['ZIP'] for row in data if 'ZIP' in row)
 
 for zip_value in unique_zip_values:
     filtered_data = [row for row in data if row.get('ZIP') == zip_value]
