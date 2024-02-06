@@ -1,7 +1,7 @@
 import csv
 import os
 
-input_file_path = 'C:\Python Bootcoding\Hospitals1.csv'
+input_file_path = r'C:\Python Bootcoding\Hospitals1.csv'
 output_directory = r'C:\Python Bootcoding\bootcoding-python\Python_Assignment_Day_36\Big Code\CSV_files'
 
 if not os.path.exists(output_directory):
