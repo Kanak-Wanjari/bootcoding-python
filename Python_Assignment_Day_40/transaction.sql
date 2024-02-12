@@ -1,4 +1,4 @@
-CREATE TABLE Transaction (
+CREATE TABLE Transaction_1 (
     TransactionID INT PRIMARY KEY,
     AccountID INT,
     TransactionDate DATE,
@@ -11,7 +11,7 @@ CREATE TABLE Transaction (
     Balance DECIMAL(15,2)
 );
 
-INSERT INTO Transaction (TransactionID, AccountID, TransactionDate, TransactionType, Amount, Description, Category, Merchant, Location, Balance)
+INSERT INTO Transaction_1 (TransactionID, AccountID, TransactionDate, TransactionType, Amount, Description, Category, Merchant, Location, Balance)
 VALUES
     (1, 101, '2022-05-11', 'Credit', 1000.00, 'Salary Credit', 'Income', 'ABC Corp', 'Delhi', 5000.00),
     (2, 102, '2022-05-12', 'Debit', 500.00, 'Grocery Shopping', 'Expense', 'SuperMart', 'Mumbai', 4500.00),

@@ -1,4 +1,4 @@
-CREATE TABLE Order (
+CREATE TABLE Order_1 (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE,
@@ -11,7 +11,7 @@ CREATE TABLE Order (
     DeliveryStatus VARCHAR(20)
 );
 
-INSERT INTO Order (OrderID, CustomerID, OrderDate, ShipDate, ProductID, Quantity, UnitPrice, TotalAmount, PaymentStatus, DeliveryStatus)
+INSERT INTO Order_1 (OrderID, CustomerID, OrderDate, ShipDate, ProductID, Quantity, UnitPrice, TotalAmount, PaymentStatus, DeliveryStatus)
 VALUES
     (1, 1, '2022-05-01', '2022-05-05', 1, 2, 1200.00, 2400.00, 'Paid', 'Shipped'),
     (2, 2, '2022-05-02', '2022-05-06', 3, 1, 50.00, 50.00, 'Pending', 'Pending'),

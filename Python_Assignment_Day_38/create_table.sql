@@ -25,7 +25,7 @@ unique (emp_id);
 alter table employee
 drop constraint unique_employee_id;
 
-create view high_salary_employee as
+/*create view high_salary_employee as
 select *
 from employee
 where emp_sal > 50000;
